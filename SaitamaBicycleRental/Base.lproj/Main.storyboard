@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fIa-Y3-R01">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="oc7-4o-7xg">
+            <objects>
+                <navigationController id="fIa-Y3-R01" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="7dr-Zp-R4O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xB2-cc-r7a"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i4L-WQ-3iY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="161" y="36"/>
+        </scene>
+        <!--Saitama Bicycle Rental-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="SaitamaBicycleRental" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Re3-7x-ESm">
+                                <rect key="frame" x="16" y="122" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g0S-Zo-7cM">
+                                <rect key="frame" x="16" y="160" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="eLq-Tv-13e"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xv1-TP-MuS">
+                                <rect key="frame" x="164" y="198" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="13"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="performLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HsQ-UJ-zBB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you have not account yet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ta-3z-og4">
+                                <rect key="frame" x="64" y="270" width="247" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="lgT-ZO-3r2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="12"/>
+                                <color key="textColor" red="0.12156862745098039" green="0.12156862745098039" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="ErrorMessage" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="A2j-Ck-TzS">
+                                <rect key="frame" x="16" y="326" width="343" height="35"/>
+                                <color key="backgroundColor" red="0.84619391030000002" green="0.0" blue="0.0079218605299999998" alpha="0.73158877539315048" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQG-d0-414">
+                                <rect key="frame" x="155" y="288" width="65" height="30"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="13"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="1CR-J6-lWn" kind="show" id="bes-hC-DV6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82745098039215681" green="0.82745098039215681" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jQG-d0-414" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="139" id="0Zt-HN-QBr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jQG-d0-414" secondAttribute="trailing" constant="139" id="4xb-Gf-Wyn"/>
+                            <constraint firstItem="g0S-Zo-7cM" firstAttribute="top" secondItem="Re3-7x-ESm" secondAttribute="bottom" constant="8" symbolic="YES" id="GMU-IY-waY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4ta-3z-og4" secondAttribute="trailing" constant="48" id="JQL-G5-u9g"/>
+                            <constraint firstItem="xv1-TP-MuS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="148" id="KFl-Ia-z7j"/>
+                            <constraint firstItem="4ta-3z-og4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="270" id="KfD-AW-dKx"/>
+                            <constraint firstItem="g0S-Zo-7cM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="LZi-0E-fUN"/>
+                            <constraint firstItem="4ta-3z-og4" firstAttribute="top" secondItem="xv1-TP-MuS" secondAttribute="bottom" constant="42" id="Lnj-Mf-XcG"/>
+                            <constraint firstItem="A2j-Ck-TzS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="PLD-Tc-GM8"/>
+                            <constraint firstItem="A2j-Ck-TzS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="VL8-W1-0sq"/>
+                            <constraint firstItem="Re3-7x-ESm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="YbL-Fb-OPU"/>
+                            <constraint firstItem="A2j-Ck-TzS" firstAttribute="top" secondItem="4ta-3z-og4" secondAttribute="bottom" constant="35" id="dOg-on-G4e"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="A2j-Ck-TzS" secondAttribute="bottom" constant="306" id="eZ0-f8-nbY"/>
+                            <constraint firstItem="g0S-Zo-7cM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="160" id="fd0-u6-Z0z"/>
+                            <constraint firstItem="Re3-7x-ESm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="gvQ-kp-bn1"/>
+                            <constraint firstItem="xv1-TP-MuS" firstAttribute="top" secondItem="g0S-Zo-7cM" secondAttribute="bottom" constant="8" symbolic="YES" id="pNU-HL-p3u"/>
+                            <constraint firstItem="A2j-Ck-TzS" firstAttribute="top" secondItem="jQG-d0-414" secondAttribute="bottom" constant="8" symbolic="YES" id="t0T-nE-Fh9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xv1-TP-MuS" secondAttribute="trailing" constant="149" id="xf3-O4-VGv"/>
+                            <constraint firstItem="4ta-3z-og4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="48" id="zSS-g5-M5c"/>
+                            <constraint firstItem="g0S-Zo-7cM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zTu-8i-cN5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Saitama Bicycle Rental" id="v8W-Pz-de0"/>
+                    <connections>
+                        <outlet property="twErrorMessage" destination="A2j-Ck-TzS" id="FnM-ws-IO7"/>
+                        <outlet property="txtEmail" destination="Re3-7x-ESm" id="Ig7-nY-9dm"/>
+                        <outlet property="txtPassword" destination="g0S-Zo-7cM" id="U0n-MA-Mld"/>
+                        <segue destination="WKt-7n-Eo2" kind="presentation" identifier="segLoginToPlaces" id="lHh-cP-g16"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080.8" y="35.532233883058474"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="p4s-Ot-VjV">
+            <objects>
+                <viewController id="1CR-J6-lWn" customClass="RegisterViewController" customModule="SaitamaBicycleRental" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RJd-Cc-Xfc"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Sf-NW-0XU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EVV-Qg-M4X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yvF-4r-i92">
+                                <rect key="frame" x="16" y="117" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0xq-xD-91O">
+                                <rect key="frame" x="16" y="155" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password Confirmation" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Epw-Db-cNQ">
+                                <rect key="frame" x="16" y="193" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heO-Bt-8Bx">
+                                <rect key="frame" x="158" y="241" width="58" height="30"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="13"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="performRegister:" destination="1CR-J6-lWn" eventType="touchUpInside" id="9wn-rV-jBB"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="ErrorMessage" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="N7q-Ia-9kF">
+                                <rect key="frame" x="16" y="289" width="343" height="35"/>
+                                <color key="backgroundColor" red="0.84619391030000002" green="0.0" blue="0.0079218605299999998" alpha="0.7315887754" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="ddD-ug-RYd"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82745098039215681" green="0.82745098039215681" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="N7q-Ia-9kF" firstAttribute="trailing" secondItem="EVV-Qg-M4X" secondAttribute="trailingMargin" id="1di-vw-B5w"/>
+                            <constraint firstItem="3Sf-NW-0XU" firstAttribute="top" secondItem="N7q-Ia-9kF" secondAttribute="bottom" constant="343" id="3Mr-XP-b6c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="heO-Bt-8Bx" secondAttribute="trailing" constant="143" id="C0U-h6-95m"/>
+                            <constraint firstItem="0xq-xD-91O" firstAttribute="trailing" secondItem="EVV-Qg-M4X" secondAttribute="trailingMargin" id="Dbw-Q1-waI"/>
+                            <constraint firstItem="yvF-4r-i92" firstAttribute="trailing" secondItem="EVV-Qg-M4X" secondAttribute="trailingMargin" id="Ewx-4q-Fd3"/>
+                            <constraint firstItem="heO-Bt-8Bx" firstAttribute="top" secondItem="Epw-Db-cNQ" secondAttribute="bottom" constant="18" id="IB4-mP-ro6"/>
+                            <constraint firstItem="yvF-4r-i92" firstAttribute="leading" secondItem="EVV-Qg-M4X" secondAttribute="leadingMargin" id="MeD-XI-XDS"/>
+                            <constraint firstItem="Epw-Db-cNQ" firstAttribute="trailing" secondItem="EVV-Qg-M4X" secondAttribute="trailingMargin" id="NjI-n6-chl"/>
+                            <constraint firstItem="Epw-Db-cNQ" firstAttribute="top" secondItem="0xq-xD-91O" secondAttribute="bottom" constant="8" symbolic="YES" id="U0j-T9-5JQ"/>
+                            <constraint firstItem="N7q-Ia-9kF" firstAttribute="top" secondItem="heO-Bt-8Bx" secondAttribute="bottom" constant="18" id="XEL-CB-FVV"/>
+                            <constraint firstItem="0xq-xD-91O" firstAttribute="top" secondItem="yvF-4r-i92" secondAttribute="bottom" constant="8" symbolic="YES" id="Y4W-D4-Oam"/>
+                            <constraint firstItem="0xq-xD-91O" firstAttribute="leading" secondItem="EVV-Qg-M4X" secondAttribute="leadingMargin" id="dLv-AO-q5U"/>
+                            <constraint firstItem="Epw-Db-cNQ" firstAttribute="leading" secondItem="EVV-Qg-M4X" secondAttribute="leadingMargin" id="gXm-vf-M0a"/>
+                            <constraint firstItem="heO-Bt-8Bx" firstAttribute="top" secondItem="Epw-Db-cNQ" secondAttribute="bottom" constant="18" id="j4k-3D-ANO"/>
+                            <constraint firstItem="N7q-Ia-9kF" firstAttribute="leading" secondItem="EVV-Qg-M4X" secondAttribute="leadingMargin" id="xoF-MX-Mss"/>
+                            <constraint firstItem="heO-Bt-8Bx" firstAttribute="leading" secondItem="EVV-Qg-M4X" secondAttribute="leadingMargin" constant="142" id="y57-Io-gb2"/>
+                            <constraint firstItem="Epw-Db-cNQ" firstAttribute="top" secondItem="EVV-Qg-M4X" secondAttribute="top" constant="193" id="yH6-55-PfQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="twErrorMessage" destination="N7q-Ia-9kF" id="zRa-wK-gHa"/>
+                        <outlet property="txtEmail" destination="yvF-4r-i92" id="S45-ct-YwD"/>
+                        <outlet property="txtPassword" destination="0xq-xD-91O" id="p1I-Oy-Kp3"/>
+                        <outlet property="txtPasswordConfirmation" destination="Epw-Db-cNQ" id="k6N-fK-nYl"/>
+                        <segue destination="WKt-7n-Eo2" kind="presentation" identifier="segRegisterToPlaces" id="AH8-pD-dnA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0sI-Ln-WQ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2317.5999999999999" y="-1046.6266866566718"/>
+        </scene>
+        <!--Rent A Bicycle-->
+        <scene sceneID="zh7-0y-SqU">
+            <objects>
+                <viewController id="avh-qb-cCL" customClass="PlacesViewController" customModule="SaitamaBicycleRental" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YyZ-er-uUW"/>
+                        <viewControllerLayoutGuide type="bottom" id="aTP-87-kny"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sRJ-G8-PFF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap marker to rent a bicycle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hlf-qm-cNk">
+                                <rect key="frame" x="0.0" y="64" width="375" height="21"/>
+                                <color key="backgroundColor" red="0.84619391030000002" green="0.0" blue="0.0079218605299999998" alpha="0.85492995689999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="gZS-VH-dYs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Gc-3v-b8g">
+                                <rect key="frame" x="0.0" y="90" width="372" height="577"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4Gc-3v-b8g" firstAttribute="top" secondItem="Hlf-qm-cNk" secondAttribute="bottom" constant="5" id="27g-Xn-tTx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4Gc-3v-b8g" secondAttribute="trailing" constant="-13" id="3DU-R0-O8A"/>
+                            <constraint firstAttribute="trailing" secondItem="Hlf-qm-cNk" secondAttribute="trailing" id="79P-3K-eag"/>
+                            <constraint firstItem="Hlf-qm-cNk" firstAttribute="leading" secondItem="4Gc-3v-b8g" secondAttribute="leading" id="DYp-pC-Cka"/>
+                            <constraint firstItem="4Gc-3v-b8g" firstAttribute="bottom" secondItem="aTP-87-kny" secondAttribute="top" id="eah-Yl-wln"/>
+                            <constraint firstItem="Hlf-qm-cNk" firstAttribute="leading" secondItem="sRJ-G8-PFF" secondAttribute="leading" id="fc6-Cc-2SF"/>
+                            <constraint firstItem="Hlf-qm-cNk" firstAttribute="top" secondItem="YyZ-er-uUW" secondAttribute="bottom" id="nGb-i1-AEK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rent A Bicycle" id="dW4-sA-UMU">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="569-lW-Rrs">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ncd-Sp-Ud1">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="signOut:" destination="avh-qb-cCL" eventType="touchUpInside" id="XuP-T7-ULp"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="4Gc-3v-b8g" id="tvX-Po-ilg"/>
+                        <segue destination="O1W-tK-6pl" kind="show" identifier="segPlacesToRentBicycle" id="WV6-Ha-0lK"/>
+                        <segue destination="fIa-Y3-R01" kind="presentation" identifier="segPlacesToMain" id="tNX-Uz-mUk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D06-xB-QSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3717.5999999999999" y="-171.36431784107947"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YUY-3t-aQT">
+            <objects>
+                <navigationController id="WKt-7n-Eo2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="zQW-F8-KMl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="avh-qb-cCL" kind="relationship" relationship="rootViewController" id="QsY-Ws-g2F"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pQE-rg-pKm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2534" y="-171"/>
+        </scene>
+        <!--Rent Bicycle View Controller-->
+        <scene sceneID="BeC-Qo-dHk">
+            <objects>
+                <viewController id="O1W-tK-6pl" customClass="RentBicycleViewController" customModule="SaitamaBicycleRental" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6JI-hK-sYH"/>
+                        <viewControllerLayoutGuide type="bottom" id="ibM-75-uvU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KMX-YK-cc8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bk4-rZ-vpZ">
+                                <rect key="frame" x="16" y="116" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name On Card" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f5v-wH-1mc">
+                                <rect key="frame" x="16" y="154" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Expiration (MM/YY)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rtK-vp-xZE">
+                                <rect key="frame" x="16" y="192" width="168" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Code" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="igk-IL-0Cu">
+                                <rect key="frame" x="198" y="192" width="161" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="161" id="EAD-hh-eFq"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80q-uZ-YIC">
+                                <rect key="frame" x="16" y="82" width="343" height="21"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLY-2N-dgc">
+                                <rect key="frame" x="164" y="247" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="13"/>
+                                <state key="normal" title="Rent"/>
+                                <connections>
+                                    <action selector="rentBicycle:" destination="O1W-tK-6pl" eventType="touchUpInside" id="lbG-cw-oab"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="Message" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MCM-Wx-rOV">
+                                <rect key="frame" x="16" y="295" width="343" height="35"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.55686274509803924" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Icv-cc-Fut"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82745098039215681" green="0.82745098039215681" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="MCM-Wx-rOV" firstAttribute="leading" secondItem="KMX-YK-cc8" secondAttribute="leadingMargin" constant="-4" id="2Uk-O7-aVs"/>
+                            <constraint firstItem="rtK-vp-xZE" firstAttribute="leading" secondItem="KMX-YK-cc8" secondAttribute="leadingMargin" constant="-4" id="35i-9w-80u"/>
+                            <constraint firstItem="bk4-rZ-vpZ" firstAttribute="top" secondItem="KMX-YK-cc8" secondAttribute="top" constant="116" id="6su-r3-cSJ"/>
+                            <constraint firstItem="igk-IL-0Cu" firstAttribute="top" secondItem="f5v-wH-1mc" secondAttribute="bottom" constant="8" symbolic="YES" id="9US-sq-A7J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="80q-uZ-YIC" secondAttribute="trailing" constant="-4" id="BcZ-Ly-Snx"/>
+                            <constraint firstItem="f5v-wH-1mc" firstAttribute="top" secondItem="bk4-rZ-vpZ" secondAttribute="bottom" constant="8" symbolic="YES" id="Dje-u1-kzI"/>
+                            <constraint firstItem="bk4-rZ-vpZ" firstAttribute="top" secondItem="80q-uZ-YIC" secondAttribute="bottom" constant="13" id="Gf8-ku-UzA"/>
+                            <constraint firstItem="80q-uZ-YIC" firstAttribute="leading" secondItem="KMX-YK-cc8" secondAttribute="leadingMargin" constant="-4" id="I5m-ko-Jij"/>
+                            <constraint firstItem="HLY-2N-dgc" firstAttribute="leading" secondItem="KMX-YK-cc8" secondAttribute="leadingMargin" constant="144" id="QK3-es-sb1"/>
+                            <constraint firstItem="ibM-75-uvU" firstAttribute="top" secondItem="MCM-Wx-rOV" secondAttribute="bottom" constant="337" id="U5a-ft-Sc2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MCM-Wx-rOV" secondAttribute="trailing" constant="-4" id="UWT-KR-7CG"/>
+                            <constraint firstItem="MCM-Wx-rOV" firstAttribute="top" secondItem="HLY-2N-dgc" secondAttribute="bottom" constant="18" id="ZMN-Ua-Jh4"/>
+                            <constraint firstItem="HLY-2N-dgc" firstAttribute="top" secondItem="igk-IL-0Cu" secondAttribute="bottom" constant="25" id="a23-5v-w1L"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bk4-rZ-vpZ" secondAttribute="trailing" constant="-4" id="cZE-TD-goO"/>
+                            <constraint firstItem="f5v-wH-1mc" firstAttribute="leading" secondItem="KMX-YK-cc8" secondAttribute="leadingMargin" constant="-4" id="cbc-Vs-Gc6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="igk-IL-0Cu" secondAttribute="trailing" constant="-4" id="dF5-4k-dgb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f5v-wH-1mc" secondAttribute="trailing" constant="-4" id="gVH-lr-Lzb"/>
+                            <constraint firstItem="igk-IL-0Cu" firstAttribute="leading" secondItem="rtK-vp-xZE" secondAttribute="trailing" constant="14" id="iKh-aD-czl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HLY-2N-dgc" secondAttribute="trailing" constant="145" id="ifh-2o-MYr"/>
+                            <constraint firstItem="bk4-rZ-vpZ" firstAttribute="trailing" secondItem="igk-IL-0Cu" secondAttribute="trailing" id="lV7-jq-srp"/>
+                            <constraint firstItem="bk4-rZ-vpZ" firstAttribute="leading" secondItem="KMX-YK-cc8" secondAttribute="leadingMargin" constant="-4" id="ntc-ev-xYx"/>
+                            <constraint firstItem="igk-IL-0Cu" firstAttribute="baseline" secondItem="rtK-vp-xZE" secondAttribute="baseline" id="pkj-LJ-tGU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblRenterName" destination="80q-uZ-YIC" id="SSB-5T-18r"/>
+                        <outlet property="twMessage" destination="MCM-Wx-rOV" id="eEO-30-KuP"/>
+                        <outlet property="txtCardNumber" destination="bk4-rZ-vpZ" id="fFA-SD-52F"/>
+                        <outlet property="txtCode" destination="igk-IL-0Cu" id="oGs-fC-ZEb"/>
+                        <outlet property="txtExpiration" destination="rtK-vp-xZE" id="khy-vr-cHU"/>
+                        <outlet property="txtFullName" destination="f5v-wH-1mc" id="l0i-FL-cWK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FDD-ma-ItT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3717.5999999999999" y="633.73313343328346"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="AH8-pD-dnA"/>
+    </inferredMetricsTieBreakers>
+</document>

@@ -1,0 +1,875 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4346160719DBA856D18697C1 /* Pods_SaitamaBicycleRentalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525F95A1C0378902341E9797 /* Pods_SaitamaBicycleRentalUITests.framework */; };
+		581CAFB01DEA8CA30070E1BB /* Controllers_Providers_PlacesProvider_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CAFAF1DEA8CA30070E1BB /* Controllers_Providers_PlacesProvider_Tests.swift */; };
+		581CAFB21DEA8FA00070E1BB /* ErrorTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CAFB11DEA8FA00070E1BB /* ErrorTypes.swift */; };
+		581CAFB41DEA92020070E1BB /* Controllers_Providers_AuthenticationProvider_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CAFB31DEA92020070E1BB /* Controllers_Providers_AuthenticationProvider_Tests.swift */; };
+		581CAFB61DEA93360070E1BB /* Controllers_Providers_TokenProvider_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CAFB51DEA93360070E1BB /* Controllers_Providers_TokenProvider_Tests.swift */; };
+		581CAFB81DEA95220070E1BB /* Controllers_Utility_RentBicycleUtility_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CAFB71DEA95220070E1BB /* Controllers_Utility_RentBicycleUtility_Tests.swift */; };
+		581CAFBA1DEA95B80070E1BB /* Controllers_Adapters_ServiceAdapter_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CAFB91DEA95B80070E1BB /* Controllers_Adapters_ServiceAdapter_Tests.swift */; };
+		581CAFBC1DEA95C90070E1BB /* Controllers_Adapters_ConfigAdapter_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CAFBB1DEA95C90070E1BB /* Controllers_Adapters_ConfigAdapter_Tests.swift */; };
+		581CAFBE1DEA97A20070E1BB /* LoginViewController_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CAFBD1DEA97A20070E1BB /* LoginViewController_UITests.swift */; };
+		5885DC2C1DE9FBF500F34DEB /* TokenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5885DC2B1DE9FBF500F34DEB /* TokenProvider.swift */; };
+		58D732401DEA661D0068D5C1 /* RentBicycleUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D7323F1DEA661D0068D5C1 /* RentBicycleUtility.swift */; };
+		58D732421DEA6DFD0068D5C1 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D732411DEA6DFD0068D5C1 /* Reachability.swift */; };
+		58D732441DEA76E40068D5C1 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D732431DEA76E40068D5C1 /* Validation.swift */; };
+		58D732491DEA83B50068D5C1 /* Controllers_Utility_Validation_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D732481DEA83B50068D5C1 /* Controllers_Utility_Validation_Tests.swift */; };
+		58E890761DEA366200F99C53 /* PlacesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E890751DEA366200F99C53 /* PlacesProvider.swift */; };
+		58E890781DEA41FA00F99C53 /* Renter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E890771DEA41FA00F99C53 /* Renter.swift */; };
+		58E890801DEA569800F99C53 /* RentBicycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E8907F1DEA569800F99C53 /* RentBicycleViewController.swift */; };
+		58FF648E1DE9AB02006E13D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FF648D1DE9AB02006E13D6 /* AppDelegate.swift */; };
+		58FF64931DE9AB02006E13D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58FF64911DE9AB02006E13D6 /* Main.storyboard */; };
+		58FF64951DE9AB02006E13D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58FF64941DE9AB02006E13D6 /* Assets.xcassets */; };
+		58FF64C11DE9AE33006E13D6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FF64C01DE9AE33006E13D6 /* Constants.swift */; };
+		58FF64C31DE9AE69006E13D6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FF64C21DE9AE69006E13D6 /* LoginViewController.swift */; };
+		58FF64C51DE9AF3D006E13D6 /* Namespaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FF64C41DE9AF3D006E13D6 /* Namespaces.swift */; };
+		58FF64C71DE9B0DC006E13D6 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58FF64C61DE9B0DC006E13D6 /* Config.plist */; };
+		58FF64CC1DE9CA41006E13D6 /* AuthenticationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FF64CB1DE9CA41006E13D6 /* AuthenticationProvider.swift */; };
+		58FF64CF1DE9CAD6006E13D6 /* ServiceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FF64CE1DE9CAD6006E13D6 /* ServiceAdapter.swift */; };
+		58FF64D11DE9CC9A006E13D6 /* ConfigAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FF64D01DE9CC9A006E13D6 /* ConfigAdapter.swift */; };
+		58FF64D31DE9D3F2006E13D6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FF64D21DE9D3F2006E13D6 /* RegisterViewController.swift */; };
+		58FF64D51DE9D5EF006E13D6 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FF64D41DE9D5EF006E13D6 /* PlacesViewController.swift */; };
+		D7747578B79F5941046BCBF7 /* Pods_SaitamaBicycleRental.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20FC20D1D9120E6C69F0A32 /* Pods_SaitamaBicycleRental.framework */; };
+		E516D395E03F5CA0C11B9E1E /* Pods_SaitamaBicycleRentalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AE3DB334DF6CCABA3037468 /* Pods_SaitamaBicycleRentalTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		58FF649F1DE9AB02006E13D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58FF64821DE9AB01006E13D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58FF64891DE9AB01006E13D6;
+			remoteInfo = SaitamaBicycleRental;
+		};
+		58FF64AA1DE9AB02006E13D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58FF64821DE9AB01006E13D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58FF64891DE9AB01006E13D6;
+			remoteInfo = SaitamaBicycleRental;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		482D891E9245D75E06C3FAA6 /* Pods-SaitamaBicycleRentalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaitamaBicycleRentalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SaitamaBicycleRentalTests/Pods-SaitamaBicycleRentalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		525F95A1C0378902341E9797 /* Pods_SaitamaBicycleRentalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaitamaBicycleRentalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55CCD6C42E2565200F1A5992 /* Pods-SaitamaBicycleRental.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaitamaBicycleRental.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SaitamaBicycleRental/Pods-SaitamaBicycleRental.debug.xcconfig"; sourceTree = "<group>"; };
+		581CAFAF1DEA8CA30070E1BB /* Controllers_Providers_PlacesProvider_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controllers_Providers_PlacesProvider_Tests.swift; sourceTree = "<group>"; };
+		581CAFB11DEA8FA00070E1BB /* ErrorTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ErrorTypes.swift; path = Models/ErrorTypes.swift; sourceTree = "<group>"; };
+		581CAFB31DEA92020070E1BB /* Controllers_Providers_AuthenticationProvider_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controllers_Providers_AuthenticationProvider_Tests.swift; sourceTree = "<group>"; };
+		581CAFB51DEA93360070E1BB /* Controllers_Providers_TokenProvider_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controllers_Providers_TokenProvider_Tests.swift; sourceTree = "<group>"; };
+		581CAFB71DEA95220070E1BB /* Controllers_Utility_RentBicycleUtility_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controllers_Utility_RentBicycleUtility_Tests.swift; sourceTree = "<group>"; };
+		581CAFB91DEA95B80070E1BB /* Controllers_Adapters_ServiceAdapter_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controllers_Adapters_ServiceAdapter_Tests.swift; sourceTree = "<group>"; };
+		581CAFBB1DEA95C90070E1BB /* Controllers_Adapters_ConfigAdapter_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controllers_Adapters_ConfigAdapter_Tests.swift; sourceTree = "<group>"; };
+		581CAFBD1DEA97A20070E1BB /* LoginViewController_UITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController_UITests.swift; sourceTree = "<group>"; };
+		5885DC2B1DE9FBF500F34DEB /* TokenProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TokenProvider.swift; path = Controllers/Providers/TokenProvider.swift; sourceTree = "<group>"; };
+		58D7323F1DEA661D0068D5C1 /* RentBicycleUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RentBicycleUtility.swift; path = Controllers/Utility/RentBicycleUtility.swift; sourceTree = "<group>"; };
+		58D732411DEA6DFD0068D5C1 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Controllers/Utility/Reachability.swift; sourceTree = "<group>"; };
+		58D732431DEA76E40068D5C1 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Controllers/Utility/Validation.swift; sourceTree = "<group>"; };
+		58D732481DEA83B50068D5C1 /* Controllers_Utility_Validation_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controllers_Utility_Validation_Tests.swift; sourceTree = "<group>"; };
+		58E890751DEA366200F99C53 /* PlacesProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlacesProvider.swift; path = Controllers/Providers/PlacesProvider.swift; sourceTree = "<group>"; };
+		58E890771DEA41FA00F99C53 /* Renter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Renter.swift; path = Models/Renter.swift; sourceTree = "<group>"; };
+		58E8907F1DEA569800F99C53 /* RentBicycleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RentBicycleViewController.swift; path = Controllers/RentBicycleViewController.swift; sourceTree = "<group>"; };
+		58FF648A1DE9AB02006E13D6 /* SaitamaBicycleRental.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaitamaBicycleRental.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58FF648D1DE9AB02006E13D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		58FF64921DE9AB02006E13D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		58FF64941DE9AB02006E13D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58FF64991DE9AB02006E13D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58FF649E1DE9AB02006E13D6 /* SaitamaBicycleRentalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaitamaBicycleRentalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58FF64A41DE9AB02006E13D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58FF64A91DE9AB02006E13D6 /* SaitamaBicycleRentalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaitamaBicycleRentalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58FF64AF1DE9AB02006E13D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58FF64C01DE9AE33006E13D6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Models/Constants.swift; sourceTree = "<group>"; };
+		58FF64C21DE9AE69006E13D6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
+		58FF64C41DE9AF3D006E13D6 /* Namespaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Namespaces.swift; sourceTree = "<group>"; };
+		58FF64C61DE9B0DC006E13D6 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		58FF64CB1DE9CA41006E13D6 /* AuthenticationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthenticationProvider.swift; path = Controllers/Providers/AuthenticationProvider.swift; sourceTree = "<group>"; };
+		58FF64CE1DE9CAD6006E13D6 /* ServiceAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceAdapter.swift; path = Controllers/Adapters/ServiceAdapter.swift; sourceTree = "<group>"; };
+		58FF64D01DE9CC9A006E13D6 /* ConfigAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfigAdapter.swift; path = Controllers/Adapters/ConfigAdapter.swift; sourceTree = "<group>"; };
+		58FF64D21DE9D3F2006E13D6 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = Controllers/RegisterViewController.swift; sourceTree = "<group>"; };
+		58FF64D41DE9D5EF006E13D6 /* PlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlacesViewController.swift; path = Controllers/PlacesViewController.swift; sourceTree = "<group>"; };
+		7BC4C9EA508C5B91B383D672 /* Pods-SaitamaBicycleRental.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaitamaBicycleRental.release.xcconfig"; path = "Pods/Target Support Files/Pods-SaitamaBicycleRental/Pods-SaitamaBicycleRental.release.xcconfig"; sourceTree = "<group>"; };
+		8A6CD86D22A470BCF54BD971 /* Pods-SaitamaBicycleRentalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaitamaBicycleRentalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SaitamaBicycleRentalTests/Pods-SaitamaBicycleRentalTests.release.xcconfig"; sourceTree = "<group>"; };
+		8AE3DB334DF6CCABA3037468 /* Pods_SaitamaBicycleRentalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaitamaBicycleRentalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB34C6FD217E6B96D8DEDB1A /* Pods-SaitamaBicycleRentalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaitamaBicycleRentalUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SaitamaBicycleRentalUITests/Pods-SaitamaBicycleRentalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9CA6AAD0BAE10C843D6D637 /* Pods-SaitamaBicycleRentalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaitamaBicycleRentalUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SaitamaBicycleRentalUITests/Pods-SaitamaBicycleRentalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F20FC20D1D9120E6C69F0A32 /* Pods_SaitamaBicycleRental.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaitamaBicycleRental.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58FF64871DE9AB01006E13D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7747578B79F5941046BCBF7 /* Pods_SaitamaBicycleRental.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58FF649B1DE9AB02006E13D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E516D395E03F5CA0C11B9E1E /* Pods_SaitamaBicycleRentalTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58FF64A61DE9AB02006E13D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4346160719DBA856D18697C1 /* Pods_SaitamaBicycleRentalUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52C77CAE5F04B3EF0F7FF7FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55CCD6C42E2565200F1A5992 /* Pods-SaitamaBicycleRental.debug.xcconfig */,
+				7BC4C9EA508C5B91B383D672 /* Pods-SaitamaBicycleRental.release.xcconfig */,
+				482D891E9245D75E06C3FAA6 /* Pods-SaitamaBicycleRentalTests.debug.xcconfig */,
+				8A6CD86D22A470BCF54BD971 /* Pods-SaitamaBicycleRentalTests.release.xcconfig */,
+				AB34C6FD217E6B96D8DEDB1A /* Pods-SaitamaBicycleRentalUITests.debug.xcconfig */,
+				E9CA6AAD0BAE10C843D6D637 /* Pods-SaitamaBicycleRentalUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		58D7323E1DEA65F80068D5C1 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				58D7323F1DEA661D0068D5C1 /* RentBicycleUtility.swift */,
+				58D732411DEA6DFD0068D5C1 /* Reachability.swift */,
+				58D732431DEA76E40068D5C1 /* Validation.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		58FF64811DE9AB01006E13D6 = {
+			isa = PBXGroup;
+			children = (
+				58FF648C1DE9AB02006E13D6 /* SaitamaBicycleRental */,
+				58FF64A11DE9AB02006E13D6 /* SaitamaBicycleRentalTests */,
+				58FF64AC1DE9AB02006E13D6 /* SaitamaBicycleRentalUITests */,
+				58FF648B1DE9AB02006E13D6 /* Products */,
+				52C77CAE5F04B3EF0F7FF7FA /* Pods */,
+				BAFE03BD21186E2A7B6B03B1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		58FF648B1DE9AB02006E13D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58FF648A1DE9AB02006E13D6 /* SaitamaBicycleRental.app */,
+				58FF649E1DE9AB02006E13D6 /* SaitamaBicycleRentalTests.xctest */,
+				58FF64A91DE9AB02006E13D6 /* SaitamaBicycleRentalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58FF648C1DE9AB02006E13D6 /* SaitamaBicycleRental */ = {
+			isa = PBXGroup;
+			children = (
+				58FF648D1DE9AB02006E13D6 /* AppDelegate.swift */,
+				58FF64911DE9AB02006E13D6 /* Main.storyboard */,
+				58FF64BD1DE9AB47006E13D6 /* Controllers */,
+				58FF64BC1DE9AB31006E13D6 /* Views */,
+				58FF64BB1DE9AB2B006E13D6 /* Models */,
+				58FF64941DE9AB02006E13D6 /* Assets.xcassets */,
+				58FF64991DE9AB02006E13D6 /* Info.plist */,
+				58FF64C41DE9AF3D006E13D6 /* Namespaces.swift */,
+				58FF64C61DE9B0DC006E13D6 /* Config.plist */,
+			);
+			path = SaitamaBicycleRental;
+			sourceTree = "<group>";
+		};
+		58FF64A11DE9AB02006E13D6 /* SaitamaBicycleRentalTests */ = {
+			isa = PBXGroup;
+			children = (
+				58FF64A41DE9AB02006E13D6 /* Info.plist */,
+				58D732481DEA83B50068D5C1 /* Controllers_Utility_Validation_Tests.swift */,
+				581CAFAF1DEA8CA30070E1BB /* Controllers_Providers_PlacesProvider_Tests.swift */,
+				581CAFB31DEA92020070E1BB /* Controllers_Providers_AuthenticationProvider_Tests.swift */,
+				581CAFB51DEA93360070E1BB /* Controllers_Providers_TokenProvider_Tests.swift */,
+				581CAFB71DEA95220070E1BB /* Controllers_Utility_RentBicycleUtility_Tests.swift */,
+				581CAFB91DEA95B80070E1BB /* Controllers_Adapters_ServiceAdapter_Tests.swift */,
+				581CAFBB1DEA95C90070E1BB /* Controllers_Adapters_ConfigAdapter_Tests.swift */,
+			);
+			path = SaitamaBicycleRentalTests;
+			sourceTree = "<group>";
+		};
+		58FF64AC1DE9AB02006E13D6 /* SaitamaBicycleRentalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				58FF64AF1DE9AB02006E13D6 /* Info.plist */,
+				581CAFBD1DEA97A20070E1BB /* LoginViewController_UITests.swift */,
+			);
+			path = SaitamaBicycleRentalUITests;
+			sourceTree = "<group>";
+		};
+		58FF64BB1DE9AB2B006E13D6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				58FF64C01DE9AE33006E13D6 /* Constants.swift */,
+				58E890771DEA41FA00F99C53 /* Renter.swift */,
+				581CAFB11DEA8FA00070E1BB /* ErrorTypes.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		58FF64BC1DE9AB31006E13D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		58FF64BD1DE9AB47006E13D6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				58D7323E1DEA65F80068D5C1 /* Utility */,
+				58FF64CD1DE9CAA7006E13D6 /* Adapters */,
+				58FF64CA1DE9C9FD006E13D6 /* Providers */,
+				58FF64C21DE9AE69006E13D6 /* LoginViewController.swift */,
+				58FF64D21DE9D3F2006E13D6 /* RegisterViewController.swift */,
+				58FF64D41DE9D5EF006E13D6 /* PlacesViewController.swift */,
+				58E8907F1DEA569800F99C53 /* RentBicycleViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		58FF64CA1DE9C9FD006E13D6 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				58E890751DEA366200F99C53 /* PlacesProvider.swift */,
+				58FF64CB1DE9CA41006E13D6 /* AuthenticationProvider.swift */,
+				5885DC2B1DE9FBF500F34DEB /* TokenProvider.swift */,
+			);
+			name = Providers;
+			sourceTree = "<group>";
+		};
+		58FF64CD1DE9CAA7006E13D6 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				58FF64CE1DE9CAD6006E13D6 /* ServiceAdapter.swift */,
+				58FF64D01DE9CC9A006E13D6 /* ConfigAdapter.swift */,
+			);
+			name = Adapters;
+			sourceTree = "<group>";
+		};
+		BAFE03BD21186E2A7B6B03B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F20FC20D1D9120E6C69F0A32 /* Pods_SaitamaBicycleRental.framework */,
+				8AE3DB334DF6CCABA3037468 /* Pods_SaitamaBicycleRentalTests.framework */,
+				525F95A1C0378902341E9797 /* Pods_SaitamaBicycleRentalUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58FF64891DE9AB01006E13D6 /* SaitamaBicycleRental */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58FF64B21DE9AB02006E13D6 /* Build configuration list for PBXNativeTarget "SaitamaBicycleRental" */;
+			buildPhases = (
+				AB79DF26B98529EB3095C3F4 /* [CP] Check Pods Manifest.lock */,
+				58FF64861DE9AB01006E13D6 /* Sources */,
+				58FF64871DE9AB01006E13D6 /* Frameworks */,
+				58FF64881DE9AB01006E13D6 /* Resources */,
+				EC0C013E875EF857094DF2A5 /* [CP] Embed Pods Frameworks */,
+				6A0C5EE5D29736306FCBF126 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SaitamaBicycleRental;
+			productName = SaitamaBicycleRental;
+			productReference = 58FF648A1DE9AB02006E13D6 /* SaitamaBicycleRental.app */;
+			productType = "com.apple.product-type.application";
+		};
+		58FF649D1DE9AB02006E13D6 /* SaitamaBicycleRentalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58FF64B51DE9AB02006E13D6 /* Build configuration list for PBXNativeTarget "SaitamaBicycleRentalTests" */;
+			buildPhases = (
+				D3BE9220331CE1AE02FFD78C /* [CP] Check Pods Manifest.lock */,
+				58FF649A1DE9AB02006E13D6 /* Sources */,
+				58FF649B1DE9AB02006E13D6 /* Frameworks */,
+				58FF649C1DE9AB02006E13D6 /* Resources */,
+				5C7F9A260A10C135CEBCC621 /* [CP] Embed Pods Frameworks */,
+				E90C3657535B8144EC215681 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58FF64A01DE9AB02006E13D6 /* PBXTargetDependency */,
+			);
+			name = SaitamaBicycleRentalTests;
+			productName = SaitamaBicycleRentalTests;
+			productReference = 58FF649E1DE9AB02006E13D6 /* SaitamaBicycleRentalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		58FF64A81DE9AB02006E13D6 /* SaitamaBicycleRentalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58FF64B81DE9AB02006E13D6 /* Build configuration list for PBXNativeTarget "SaitamaBicycleRentalUITests" */;
+			buildPhases = (
+				BB276FF8249811ADB13FA8D4 /* [CP] Check Pods Manifest.lock */,
+				58FF64A51DE9AB02006E13D6 /* Sources */,
+				58FF64A61DE9AB02006E13D6 /* Frameworks */,
+				58FF64A71DE9AB02006E13D6 /* Resources */,
+				E6113469A83BF526C526A946 /* [CP] Embed Pods Frameworks */,
+				CE9E0840DCB1BDD155D7155C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58FF64AB1DE9AB02006E13D6 /* PBXTargetDependency */,
+			);
+			name = SaitamaBicycleRentalUITests;
+			productName = SaitamaBicycleRentalUITests;
+			productReference = 58FF64A91DE9AB02006E13D6 /* SaitamaBicycleRentalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58FF64821DE9AB01006E13D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Fatih Türker";
+				TargetAttributes = {
+					58FF64891DE9AB01006E13D6 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = H7JXLWTSS7;
+						ProvisioningStyle = Automatic;
+					};
+					58FF649D1DE9AB02006E13D6 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = H7JXLWTSS7;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 58FF64891DE9AB01006E13D6;
+					};
+					58FF64A81DE9AB02006E13D6 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = H7JXLWTSS7;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 58FF64891DE9AB01006E13D6;
+					};
+				};
+			};
+			buildConfigurationList = 58FF64851DE9AB01006E13D6 /* Build configuration list for PBXProject "SaitamaBicycleRental" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58FF64811DE9AB01006E13D6;
+			productRefGroup = 58FF648B1DE9AB02006E13D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58FF64891DE9AB01006E13D6 /* SaitamaBicycleRental */,
+				58FF649D1DE9AB02006E13D6 /* SaitamaBicycleRentalTests */,
+				58FF64A81DE9AB02006E13D6 /* SaitamaBicycleRentalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58FF64881DE9AB01006E13D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58FF64951DE9AB02006E13D6 /* Assets.xcassets in Resources */,
+				58FF64C71DE9B0DC006E13D6 /* Config.plist in Resources */,
+				58FF64931DE9AB02006E13D6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58FF649C1DE9AB02006E13D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58FF64A71DE9AB02006E13D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C7F9A260A10C135CEBCC621 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaitamaBicycleRentalTests/Pods-SaitamaBicycleRentalTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A0C5EE5D29736306FCBF126 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaitamaBicycleRental/Pods-SaitamaBicycleRental-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB79DF26B98529EB3095C3F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BB276FF8249811ADB13FA8D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CE9E0840DCB1BDD155D7155C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaitamaBicycleRentalUITests/Pods-SaitamaBicycleRentalUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3BE9220331CE1AE02FFD78C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E6113469A83BF526C526A946 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaitamaBicycleRentalUITests/Pods-SaitamaBicycleRentalUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E90C3657535B8144EC215681 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaitamaBicycleRentalTests/Pods-SaitamaBicycleRentalTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC0C013E875EF857094DF2A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaitamaBicycleRental/Pods-SaitamaBicycleRental-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58FF64861DE9AB01006E13D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58D732441DEA76E40068D5C1 /* Validation.swift in Sources */,
+				581CAFB21DEA8FA00070E1BB /* ErrorTypes.swift in Sources */,
+				58E890801DEA569800F99C53 /* RentBicycleViewController.swift in Sources */,
+				58FF64D51DE9D5EF006E13D6 /* PlacesViewController.swift in Sources */,
+				58FF64C31DE9AE69006E13D6 /* LoginViewController.swift in Sources */,
+				5885DC2C1DE9FBF500F34DEB /* TokenProvider.swift in Sources */,
+				58FF64CF1DE9CAD6006E13D6 /* ServiceAdapter.swift in Sources */,
+				58FF648E1DE9AB02006E13D6 /* AppDelegate.swift in Sources */,
+				58FF64D31DE9D3F2006E13D6 /* RegisterViewController.swift in Sources */,
+				58D732401DEA661D0068D5C1 /* RentBicycleUtility.swift in Sources */,
+				58D732421DEA6DFD0068D5C1 /* Reachability.swift in Sources */,
+				58FF64D11DE9CC9A006E13D6 /* ConfigAdapter.swift in Sources */,
+				58E890781DEA41FA00F99C53 /* Renter.swift in Sources */,
+				58E890761DEA366200F99C53 /* PlacesProvider.swift in Sources */,
+				58FF64CC1DE9CA41006E13D6 /* AuthenticationProvider.swift in Sources */,
+				58FF64C11DE9AE33006E13D6 /* Constants.swift in Sources */,
+				58FF64C51DE9AF3D006E13D6 /* Namespaces.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58FF649A1DE9AB02006E13D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58D732491DEA83B50068D5C1 /* Controllers_Utility_Validation_Tests.swift in Sources */,
+				581CAFBA1DEA95B80070E1BB /* Controllers_Adapters_ServiceAdapter_Tests.swift in Sources */,
+				581CAFB41DEA92020070E1BB /* Controllers_Providers_AuthenticationProvider_Tests.swift in Sources */,
+				581CAFB01DEA8CA30070E1BB /* Controllers_Providers_PlacesProvider_Tests.swift in Sources */,
+				581CAFB61DEA93360070E1BB /* Controllers_Providers_TokenProvider_Tests.swift in Sources */,
+				581CAFBC1DEA95C90070E1BB /* Controllers_Adapters_ConfigAdapter_Tests.swift in Sources */,
+				581CAFB81DEA95220070E1BB /* Controllers_Utility_RentBicycleUtility_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58FF64A51DE9AB02006E13D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				581CAFBE1DEA97A20070E1BB /* LoginViewController_UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58FF64A01DE9AB02006E13D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58FF64891DE9AB01006E13D6 /* SaitamaBicycleRental */;
+			targetProxy = 58FF649F1DE9AB02006E13D6 /* PBXContainerItemProxy */;
+		};
+		58FF64AB1DE9AB02006E13D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58FF64891DE9AB01006E13D6 /* SaitamaBicycleRental */;
+			targetProxy = 58FF64AA1DE9AB02006E13D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		58FF64911DE9AB02006E13D6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58FF64921DE9AB02006E13D6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58FF64B01DE9AB02006E13D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55CCD6C42E2565200F1A5992 /* Pods-SaitamaBicycleRental.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		58FF64B11DE9AB02006E13D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BC4C9EA508C5B91B383D672 /* Pods-SaitamaBicycleRental.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58FF64B31DE9AB02006E13D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55CCD6C42E2565200F1A5992 /* Pods-SaitamaBicycleRental.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H7JXLWTSS7;
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = SaitamaBicycleRental/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = crossover.SaitamaBicycleRental;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		58FF64B41DE9AB02006E13D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BC4C9EA508C5B91B383D672 /* Pods-SaitamaBicycleRental.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H7JXLWTSS7;
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = SaitamaBicycleRental/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = crossover.SaitamaBicycleRental;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		58FF64B61DE9AB02006E13D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = H7JXLWTSS7;
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = SaitamaBicycleRentalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = crossover.SaitamaBicycleRentalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SaitamaBicycleRental.app/SaitamaBicycleRental";
+			};
+			name = Debug;
+		};
+		58FF64B71DE9AB02006E13D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A6CD86D22A470BCF54BD971 /* Pods-SaitamaBicycleRentalTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = H7JXLWTSS7;
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = SaitamaBicycleRentalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = crossover.SaitamaBicycleRentalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SaitamaBicycleRental.app/SaitamaBicycleRental";
+			};
+			name = Release;
+		};
+		58FF64B91DE9AB02006E13D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = H7JXLWTSS7;
+				INFOPLIST_FILE = SaitamaBicycleRentalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = crossover.SaitamaBicycleRentalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SaitamaBicycleRental;
+			};
+			name = Debug;
+		};
+		58FF64BA1DE9AB02006E13D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9CA6AAD0BAE10C843D6D637 /* Pods-SaitamaBicycleRentalUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = H7JXLWTSS7;
+				INFOPLIST_FILE = SaitamaBicycleRentalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = crossover.SaitamaBicycleRentalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SaitamaBicycleRental;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58FF64851DE9AB01006E13D6 /* Build configuration list for PBXProject "SaitamaBicycleRental" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58FF64B01DE9AB02006E13D6 /* Debug */,
+				58FF64B11DE9AB02006E13D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58FF64B21DE9AB02006E13D6 /* Build configuration list for PBXNativeTarget "SaitamaBicycleRental" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58FF64B31DE9AB02006E13D6 /* Debug */,
+				58FF64B41DE9AB02006E13D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58FF64B51DE9AB02006E13D6 /* Build configuration list for PBXNativeTarget "SaitamaBicycleRentalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58FF64B61DE9AB02006E13D6 /* Debug */,
+				58FF64B71DE9AB02006E13D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58FF64B81DE9AB02006E13D6 /* Build configuration list for PBXNativeTarget "SaitamaBicycleRentalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58FF64B91DE9AB02006E13D6 /* Debug */,
+				58FF64BA1DE9AB02006E13D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58FF64821DE9AB01006E13D6 /* Project object */;
+}
